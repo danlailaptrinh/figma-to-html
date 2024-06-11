@@ -429,6 +429,13 @@ a {
 
 .feedback .feedback-items {
   display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.feedback .feedback-list {
+  display: flex;
+  overflow: hidden;
 }
 
 .feedback-items .avatar {
@@ -440,10 +447,8 @@ a {
 
 .feedback-items .info .member-name {
   color: #f7f7f7;
-
   font-family: var(--font-heading);
   font-size: 2.4rem;
-
   font-weight: 700;
   line-height: 142%; /* 141.667% */
 }
@@ -475,7 +480,7 @@ a {
 }
 
 .feedback-items .content {
-  width: 66%;
+  max-width: 66%;
   margin-left: auto;
 }
 
